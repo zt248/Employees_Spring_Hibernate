@@ -7,6 +7,7 @@ import model.Address;
 import model.Department;
 import model.Employee;
 
+import java.sql.Date;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -35,7 +36,7 @@ public class Main {
 //        Calendar calendar = Calendar.getInstance();
 //        calendar.set(1992, Calendar.APRIL, 28);
 //        employee.setBirthday(new Date(calendar.getTime().getTime()));
-//        employee.setBirthday(new Date(92, 3, 28));
+        employee.setBirthday(new Date(92, 3, 28));
         employee.setAddress(address);
 
 
@@ -43,7 +44,6 @@ public class Main {
         departments.add(department);
         employee.setDepartments(departments);
 
-//        department.setEmployees(Collections.singleton(employee));
 
 
         employeeDaoImpl.add(employee);

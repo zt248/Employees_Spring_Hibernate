@@ -21,13 +21,18 @@ public class Employee implements Serializable{
     @Column(name = "last_name")
     private String lastName;
 
-//    @Column(name = "birthday")
-//    private Date birthday;
+    @Column(name = "birthday")
+    private Date birthday;
 
     @OneToOne(cascade = CascadeType.ALL)
     private Address address;
 
     @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @JoinTable(
+            name = "empl_depa",
+            joinColumns = @JoinColumn(name = "employee_id"),
+            inverseJoinColumns = @JoinColumn(name = "department_id")
+    )
     private Set<Department> departments;
 
 
@@ -61,13 +66,13 @@ public class Employee implements Serializable{
         this.lastName = lastName;
     }
 
-//    public Date getBirthday() {
-//        return birthday;
-//    }
-//
-//    public void setBirthday(Date birthday) {
-//        this.birthday = birthday;
-//    }
+    public Date getBirthday() {
+        return birthday;
+    }
+
+    public void setBirthday(Date birthday) {
+        this.birthday = birthday;
+    }
 
     public Address getAddress() {
         return address;
@@ -91,7 +96,7 @@ public class Employee implements Serializable{
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-//                ", birthday=" + birthday +
+                ", birthday=" + birthday +
                 ", address=" + address +
                 '}';
     }
