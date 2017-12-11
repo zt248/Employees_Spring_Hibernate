@@ -18,7 +18,8 @@ public class AddressDaoImpl extends SessionUtil implements AddressDAO {
         openTransactionSession();
 
         Session session = getSession();
-        session.saveOrUpdate(address);
+//        session.saveOrUpdate(address);
+        session.save(address);
 
         //close session with a transaction
         closeTransactionSesstion();

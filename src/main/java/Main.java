@@ -47,8 +47,8 @@ public class Main {
 
 
         employeeDaoImpl.add(employee);
-        addressDaoImpl.add(address);
-        departmentDaoImpl.add(department);
+//        addressDaoImpl.add(address);
+//        departmentDaoImpl.add(department);
 
         for (Employee employeeList : employeeDaoImpl.getAll()) {
             System.out.print("Employee - ");

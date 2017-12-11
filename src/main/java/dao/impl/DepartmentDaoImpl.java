@@ -16,7 +16,8 @@ public class DepartmentDaoImpl extends SessionUtil implements DepartmentDAO {
         openTransactionSession();
 
         Session session = getSession();
-        session.saveOrUpdate(department);
+//        session.saveOrUpdate(department);
+        session.save(department);
 
         //close session with a transaction
         closeTransactionSesstion();
@@ -34,7 +35,7 @@ public class DepartmentDaoImpl extends SessionUtil implements DepartmentDAO {
 //        List<Department> DepartmentList = query.getResultList();
 
         Session session = getSession();
-        List<Department>  departmentList = session.createQuery("from Department").list();
+        List<Department> departmentList = session.createQuery("from Department").list();
 
 
         return departmentList;

@@ -17,7 +17,8 @@ public class EmployeeDaoImpl extends SessionUtil implements EmployeeDAO {
         openTransactionSession();
 
         Session session = getSession();
-        session.saveOrUpdate(employee);
+//        session.saveOrUpdate(employee);
+        session.save(employee);
 
         //close session with a transaction
         closeTransactionSesstion();

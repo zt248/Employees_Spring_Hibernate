@@ -11,7 +11,7 @@ public class AddressDaoImplTest {
 
 
     @Test
-    public void add() throws DaoException {
+    public void add() {
 
         Address address = new Address(999L, "Test", "Test", "Test", "Test");
         AddressDaoImpl addressImplDao = new AddressDaoImpl();
@@ -31,7 +31,7 @@ public class AddressDaoImplTest {
     }
 
     @Test
-    public void getAll() throws DaoException {
+    public void getAll() {
         Address address = new Address(999L, "Test", "Test", "Test", "Test");
         AddressDaoImpl addressImplDao = new AddressDaoImpl();
         try {
@@ -47,7 +47,7 @@ public class AddressDaoImplTest {
     }
 
     @Test
-    public void getById() throws DaoException {
+    public void getById() {
         Address address = new Address(999L, "Test", "Test", "Test", "Test");
         AddressDaoImpl addressImplDao = new AddressDaoImpl();
         try {
@@ -66,9 +66,8 @@ public class AddressDaoImplTest {
     }
 
     @Test
-    public void update() throws DaoException {
+    public void update() {
         Address address = new Address(999L, "Test", "Test", "Test", "Test");
-
         AddressDaoImpl addressImplDao = new AddressDaoImpl();
 
         try {

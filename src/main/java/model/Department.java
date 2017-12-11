@@ -21,6 +21,10 @@ public class Department implements java.io.Serializable{
 
     }
 
+    public Department(Long id, String title) {
+        this.id = id;
+        this.title = title;
+    }
 
     public Long getId() {
         return id;

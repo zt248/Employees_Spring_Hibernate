@@ -40,7 +40,12 @@ public class Employee implements Serializable{
 
     }
 
-
+    public Employee(Long id, String firstName, String lastName, Date birthday) {
+        this.id = id;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.birthday = birthday;
+    }
 
     public Long getId() {
         return id;
