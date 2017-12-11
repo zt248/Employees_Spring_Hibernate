@@ -1,7 +1,6 @@
 package dao.impl;
 
-import Util.HibernateUtil;
-import Util.SessionUtil;
+import util.SessionUtil;
 import dao.DaoException;
 import dao.DepartmentDAO;
 import model.Department;

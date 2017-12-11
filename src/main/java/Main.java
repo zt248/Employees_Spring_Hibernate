@@ -1,4 +1,4 @@
-import Util.HibernateUtil;
+import util.HibernateUtil;
 import dao.DaoException;
 import dao.impl.AddressDaoImpl;
 import dao.impl.DepartmentDaoImpl;

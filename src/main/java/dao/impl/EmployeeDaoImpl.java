@@ -1,6 +1,6 @@
 package dao.impl;
 
-import Util.SessionUtil;
+import util.SessionUtil;
 import dao.DaoException;
 import dao.EmployeeDAO;
 import model.Employee;

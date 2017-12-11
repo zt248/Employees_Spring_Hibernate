@@ -1,12 +1,11 @@
 package dao.impl;
 
-import Util.SessionUtil;
+import util.SessionUtil;
 import dao.AddressDAO;
 import dao.DaoException;
 import model.Address;
 import org.hibernate.Session;
 
-import javax.persistence.Query;
 import java.util.List;
 
 public class AddressDaoImpl extends SessionUtil implements AddressDAO {

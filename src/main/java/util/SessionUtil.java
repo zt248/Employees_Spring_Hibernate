@@ -1,4 +1,4 @@
-package Util;
+package util;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
